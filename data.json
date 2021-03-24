@@ -1,0 +1,36 @@
+{
+    "assistant-name": "einstein",
+    "formulas": [
+        {
+            "name": "área",
+            "variant": [
+                "quadrado",
+                "triângulo",
+                "círculo",
+                "retângulo",
+                "losango"
+            ]
+        },
+        {
+            "name": "volume",
+            "variant": [
+                "cubo",
+                "cilindro",
+                "esfera"
+            ]
+        },
+        {
+            "name": "juros",
+            "variant": [
+                "simples",
+                "composto"
+            ]
+        },
+        {
+            "name": "delta"
+        },
+        {
+            "name": "bhaskara"
+        }
+    ]
+}
