@@ -83,23 +83,20 @@ def validate_question(formula, variant):
     valid = False
     composed = False
 
-    if formula:
-        for verified_formula in formulas:
-            if formula == verified_formula["name"]:
-                valid = True
-                if variant:
-                    if variant in verified_formula["variant"]:
-                        composed = True
-                        break
+    if formula in formulas:
+        valid = True
+        if (variant) and (variant in formulas[formula]["variant"]):
+            composed = True
 
     return valid, composed
 
 
 def execute_question_composed(formula, variant):
-    print("1 você quer saber: ", formula, variant)
+    print("A fórmula é: ",formulas[formula]["variant"][variant])
+    
     
 def execute_question(formula):
-    print("2 você quer saber: ", formula)
+    print("A fórmula é: ",formulas[formula]["formula"])
 
 
 if __name__ == "__main__":

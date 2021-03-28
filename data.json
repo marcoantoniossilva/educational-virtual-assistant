@@ -1,36 +1,33 @@
 {
     "assistant-name": "einstein",
-    "formulas": [
-        {
-            "name": "área",
-            "variant": [
-                "quadrado",
-                "triângulo",
-                "círculo",
-                "retângulo",
-                "losango"
-            ]
+    "formulas": {
+        "área":{
+            "variant": {
+                "quadrado": "A = L², onde 'L' é um lado.",
+                "triângulo": "A = (b.h)/2, onde 'b' é a base e 'h' é a altura.",
+                "círculo": "A = π.r², onde 'r' é o raio do círculo.",
+                "retângulo": "A = b.h, onde 'b' é a base e 'h' é a altura.",
+                "losango": "A = (D.d)/2, onde 'D' é a diagonal maior e 'd' é diagonal menor."
+            }
         },
-        {
-            "name": "volume",
-            "variant": [
-                "cubo",
-                "cilindro",
-                "esfera"
-            ]
+        "volume":{
+            "variant": {
+                "cubo": "V = a³, onde 'a' é a aresta do cubo.",
+                "cilindro": "V = π.r².h, onde 'r' é o raio e 'h' é a altura.",
+                "esfera": "Ve = 4.п.r³/3, onde 'r é o raio da esfera.'"
+            }
         },
-        {
-            "name": "juros",
-            "variant": [
-                "simples",
-                "composto"
-            ]
+        "juros":{
+            "variant": {
+                "simples": "J = C.i.t, onde 'C' é o capital, 'i' é a taxa de juros e 't' é o período.",
+                "composto": "M = C (1 + i)^t, onde 'C' é o capital,'i' é a taxa de juros e 't' é o período."
+            }
         },
-        {
-            "name": "delta"
+        "delta":{
+            "formula": "Δ = b² – 4.a.c, onde 'b' é o coeficiente linear, 'a' é o coeficiente quadrático e 'c' é o coeficiente constante."
         },
-        {
-            "name": "bhaskara"
+        "bhaskara":{
+            "formula": "X = (-b ± √Δ)/2.a, onde  onde 'b' é o coeficiente linear, 'Δ' é delta e 'a' é o coeficiente quadrático"
         }
-    ]
+    }
 }
