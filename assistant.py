@@ -69,11 +69,9 @@ def tokenizate_question(question):
 
         if len(tokens) >= 4:
             if assistant_name == tokens[0].lower():
-                print(tokens)
                 formula = tokens[3].lower()
                 if len(tokens) >= 5:
                     variant = tokens[4].lower()
-
     return formula, variant
 
 
